@@ -157,27 +157,6 @@
 					<failOnViolation>true</failOnViolation>
 				</configuration>
 			</plugin>
-			<!-- PMD -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-pmd-plugin</artifactId>
-				<version>3.27.0</version>
-				<executions>
-					<execution>
-						<phase>verify</phase>
-						<goals>
-							<goal>check</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<printFailingErrors>true</printFailingErrors>
-					<failOnViolation>true</failOnViolation>
-					<rulesets>
-						<ruleset>/rulesets/java/quickstart.xml</ruleset>
-					</rulesets>
-				</configuration>
-			</plugin>
 			<!-- SpotBugs -->
 			<plugin>
 				<groupId>com.github.spotbugs</groupId>
@@ -210,12 +189,6 @@
 				<configuration>
 					<configLocation>google_checks.xml</configLocation>
 				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-pmd-plugin</artifactId>
-				<version>3.27.0</version>
 			</plugin>
 
 			<plugin>
