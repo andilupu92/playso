@@ -31,7 +31,7 @@ jobs:
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
-      # ---------- OWASP DEPENDENCY CHECK ----------
+      # ---------- CACHE OWASP DEPENDENCY CHECK ----------
       - name: Cache OWASP dependency data
         uses: actions/cache@v4
         with:
