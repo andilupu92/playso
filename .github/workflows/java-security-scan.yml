@@ -46,6 +46,13 @@ jobs:
             -Danalyzer.nvd.api.waitTime=2000 \
             -Danalyzer.nvd.api.timeout=30000
 
+      # ---------- OWASP DEPENDENCY CHECK ----------
+      - name: Cache OWASP dependency data
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository/org/owasp/dependency-check-data
+          key: owasp-nvd-${{ runner.os }}
+
       # ---------- SNYK SCAN (optional, dacă ai cont) ----------
       - name: Snyk Scan
         uses: snyk/actions/maven@master
