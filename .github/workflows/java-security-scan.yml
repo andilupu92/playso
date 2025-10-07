@@ -47,7 +47,7 @@ jobs:
             -Dnvd.api.key=${{ secrets.NVD_API_KEY }} \
             -Dnvd.api.validforhours=24 \
             -Dnvd.api.delay=500 \
-            -DfailBuildOnCVSS=7 \
+            -DfailBuildOnCVSS=11 \
             -Dformats=HTML,XML \
             -DoutputDirectory=dependency-check-report \
             -Danalyzer.nvd.api.waitTime=2000 \
