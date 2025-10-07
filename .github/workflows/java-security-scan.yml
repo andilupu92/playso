@@ -22,7 +22,7 @@ jobs:
       - name: Build and run tests
         run: mvn clean verify -B
 
-      # ---------- SONARCLOUD ----------
+      # ----------- SONARCLOUD -----------
       - name: SonarCloud Scan
         run: |
           mvn sonar:sonar \
