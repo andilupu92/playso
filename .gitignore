@@ -8,6 +8,10 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+*/main/resources/application.yml
+*/main/resources/application-dev.yml
+*/main/resources/application-prod.yml
+*.application-prod.yml
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 .mvn/wrapper/maven-wrapper.properties
@@ -40,7 +44,6 @@ buildNumber.properties
 *.tar.gz
 *.rar
 *.idea
-*.yml
 *.gitignore
 *.gitattributes
 
